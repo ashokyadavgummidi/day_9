@@ -152,15 +152,150 @@ calc = division()
 calc.add(3, 4)
 calc.mul(5, 2)
 
+# Eg:2
+# MRO---> Method resolution Order
+class addition:
+    def add(self, a, b):
+        print(a+b)
+    def mul(self,a,b):
+        print(a%b)
+class subract:
+    def sub(self, a, b):
+        print(a-b)
+class multiply:
+    def mul(self, a, b):
+        print(a*b)
+class division(addition, subract, multiply):
+    def div(self, a, b):
+        print(a/b)
+calc=division()
+calc.add(3,4)
+calc.mul(5,2)
+# Multiple Inheritance
+ #? It has multiple parent and 1 child
+class while_pertol:
+    def function_w(self):
+        print("used to Airplans")
 
+class Organic_petrol:
+    def function_o(self):
+        print("used for Bike, cars")
+class premium_petrol:
+    def function_p(self):
+        print("spots cars, bikes")
+class petrol(while_pertol, Organic_petrol, premium_petrol):
+    def defanition(self):
+        print("Petrols types")
+p=petrol()
+p.defanition()
+p.function_o()
 
+class Honda(civic):
+    pass
 
+honda = Honda()
+honda.honda_city_engine_specs(1500, 230, 2979, "petrol", 4)
+honda.civic_body_specs("white", 2000, 5.5, "Hatchback")
+print(color, weight, height, length, vehicle_type)
 
+#! Heirarical inheritance.
+#? The one parent classe will asct as parent for all the child classes
+class catagory:
+def weight(self, weight): print(weight)
+I
+def display(self, color, taste): print(color, taste)
+class Tomato(catagory):
+def tomato_specs (self):
+color="black"
+taste "neutral taste"
+self.display(color, taste)
+class carrot (catagory):
+def carrot_specs (self):
+color="green"
+taste "sweet"
+# Eg:2
+# MRO---> Method resolution Order
+class addition:
+    def add(self, a, b):
+        print(a+b)
+    def mul(self,a,b):
+        print(a%b)
+class subract:
+    def sub(self, a, b):
+        print(a-b)
+class multiply:
+    def mul(self, a, b):
+        print(a*b)
+class division(addition, subract, multiply):
+    def div(self, a, b):
+        print(a/b)
+calc=division()
+calc.add(3,4)
+calc.mul(5,2)
 
+# ! Hybrid Inheritance
+# ? The combination of above 4 inheritance is called Hybrid Inheritance
+class c1:
+    def m1(self):
+        print("Class 1")
 
+class c2(c1):
+    def m2(self):
+        print("Class 2")
 
+class c3(c2):
+    def m3(self):
+        print("Class 3")
 
+class c4(c2):
+    def m4(self):
+        print("Class 4")
+        
+    def m3(self):
+        print("i am m3 from c4")
 
+class c5(c3):
+    def m5(self):
+        print("Class 4")  
+
+class c6(c5, c4, c2, c1):
+    def m6(self):
+print("Class 4")
+        
+obj = c6()
+obj.m3()
+# ! -------> Polymorphism
+# poly - many, morph--> form
+# A function which has the ability t perform more than 1 functionality
+# then it is considered to be as polymorphism
+
+# * Polymorphism in builtin functions
+# len() --> which is used to find the length of list, tuple, dict etc...
+# index()
+# max()
+# min()
+# count()
+# pop()
+# and more...
+
+# * Ploymorphism in operators
+#-----> +
+# print(8+8)
+# print("k"+'l')
+# print([1,2,3]+[4,5,6])
+
+# *
+# print(6*7)
+# l1 = [1,2,3,4]
+# print(*l1)
+# def f1(*args)
+# l1= [1,2,3,4]
+# print(l1*10)
+
+# polymorphism in classes
+# We can achieve polymorphism in 2 ways
+# 1.) Method overloading
+# 2.) Method overriding
 
 
 
